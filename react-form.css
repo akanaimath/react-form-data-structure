@@ -1,0 +1,461 @@
+@charset "UTF-8";
+
+.rf-form-label, .rf-form-select-cell-error, .rfFormCustomContainer,
+	.rfFormRadioHeader, .rf-form-hide-element-row-button,
+	.rf-form-label-right, .rf-form-label-right-error,
+	.rf-form-element-left, .rf-form-input-container, .rfFormDefaults,
+	.rfFormDefaultsInputTextfailed, .rfFormLabel, .rfFormLabelIndent,
+	.rfFormContainer .rfFormHeader, .rf-form-select-cell .rfFormSelectHeader,
+	.rfFormSelect, .classNameSelectRow {
+	outline: 0 none;
+	border: none;
+	box-sizing: border-box;
+	color: #7575a3;
+}
+
+.rf-form-container, .rf-form-textarea-container {
+	display: table;
+	width: 100%;
+	white-space: normal;
+}
+
+.rf-form-textarea, .rf-form-textarea-error {
+	margin-left: 10px;
+	width: calc(100% - 10px);
+	display: block;
+	resize: vertical;
+}
+
+.rf-form-textarea-error {
+	background-color: pink;
+}
+
+.rf-form-textarea-container {
+	display: block;
+}
+
+.rf-form-container-smaller-cell {
+	width: 70%;
+	display: table-cell;
+}
+
+.rf-form-container-list-cell {
+	display: table-cell;
+	white-space: nowrap;
+	width: 100%;
+	vertical-align: top;
+}
+
+.rf-form-container-list-cell-buttons {
+	display: block;
+	white-space: nowrap;
+	width: calc(100% - 10px);
+	vertical-align: top;
+	margin-left: 10px;
+}
+
+.rf-form-container-hash-cell {
+	display: block;
+	width: 100%;
+}
+
+.rf-form-container-hash-row {
+	display: block;
+	white-space: nowrap;
+	width: 100%;
+}
+
+.rf-form-container-list-row {
+	display: table-row;
+	white-space: nowrap;
+	width: 100%;
+}
+
+.rf-form-hide-element-container {
+	width: 100%;
+	display: block;
+}
+
+.rf-form-hide-element-row-button {
+	width: 100%;
+	background-color: white;
+	display: block;
+	border-bottom: solid 1px;
+	margin-bottom: 3px;
+	clear: both;
+	display: inline-block;
+	white-space: nowrap;
+	display: flex; /* establish flex container */
+	flex-direction: row; /* default value; can be omitted */
+	flex-wrap: nowrap; /* default value; can be omitted */
+	justify-content: space-between;
+	/* switched from default (flex-start, see below) */
+	background-color: lightyellow;
+}
+
+.rf-form-can-hide-element-row-label {
+	font-wieght: 500;
+	margin-left: 5px;
+	width: calc(90% - 5px);
+	display: inline-block;
+	margin-bottom: 3px;
+	color: #7575a3;
+}
+
+.rf-form-can-hide-element-input {
+	background-color: #eeeeec;
+	color: #555753;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 3px 3px;
+	font-size: 10px;
+	margin-left: 3px;
+	display: inline-block;
+}
+
+.rf-form-can-hide-element-row {
+	width: 100%;
+	float: left;
+	display: block;
+	margin: none;
+}
+
+.rf-form-input-container, .rf-form-label-right,
+	.rf-form-element-left {
+	box-sizing: border-box; //
+	width: 100%;
+	white-space: nowrap;
+	display: inline-block;
+}
+
+.rf-form-label-right, .rf-form-label-right-error {
+	width: calc(50% - 10px);
+	margin-left: 10px;
+	white-space: normal;
+}
+
+.rf-form-label-right-error {
+	background-color: pink;
+	display: inline-block;
+	width: calc(50% - 10px);
+	margin-left: 10px;
+}
+
+.rf-form-element-left {
+	margin-left: 10px;
+}
+
+.rf-form-input-checkbox {
+	
+}
+
+.rf-form-input-checkbox-error {
+	background-color: pink;
+}
+
+.rfFormSelectHeader, .rfFormSelect, .rf-form-select-cell,
+	.rf-form-select-cell-error {
+	display: inline-block;
+	margin-left: 10px;
+	width: calc(50% - 10px);
+}
+
+.rf-form-select-cell, .rf-form-select-cell-error {
+	width: calc(50% - 10px);
+}
+
+.rf-form-select-cell-error {
+	background-color: pink
+}
+
+.classNameSelectRow {
+	white-space: nowrap;
+	margin-top: 5px;
+	width: calc(100% -5px);
+}
+
+.rfFormSelect, .rfFormSelectError {
+	background-color: white;
+	width: 100%;
+	margin: 0;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	border: solid black 1px;
+}
+
+.rf-form-autocomplete {
+	float: left;
+	position: absolute;
+	display: inline;
+	background: white;
+	box-sizing: border-box;
+}
+
+.rf-form-autocomplete-show {
+	box-sizing: border-box;
+	background: white;
+	display: block;
+}
+
+.rf-form-autocomplete-hide {
+	display: none;
+}
+
+.rfFormSelectError {
+	background-color: pink;
+}
+
+.rf-form-select-multi {
+	width: 100%;
+	margin: 0;
+	border: solid black 1px;
+}
+
+.rf-form-container-list-header {
+	font-weight: 800;
+	color: #7575a3;
+	width: calc(100% - 5px);
+	margin-left: 5px;
+}
+
+.rf-form-select-option, .rf-form-select-option-error {
+	color: #7575a3;
+	background-color: white;
+}
+
+.rf-form-select-option-error {
+	background-color: pink;
+}
+
+.rf-form-submit-row {
+	text-align: center;
+}
+
+.rf-subform-submit-row {
+	text-align: right;
+	margin-right: 10px;
+}
+
+.rf-form-add-row {
+	text-align: right;
+	margin-right: 40px;
+}
+
+.rfFormSelectHeader {
+	font-weight: 500;
+	vertical-align: top;
+	color: #7575a3;
+	width: calc(50% - 10px);
+}
+
+.rf-form-header {
+	text-align: center;
+	color: #7575a3;
+	font-size: 40px;
+	font-weight: 800;
+}
+
+.rf-subform-header {
+	text-align: left;
+	margin-left: 5px;
+	color: #7575a3;
+	font-size: 23px;
+	font-weight: 600;
+}
+
+.rfFormHeader, .rfFormHeader-subForm {
+	text-align: center;
+	font-weight: bold;
+	width: 100%;
+	font-size: 20px;
+}
+
+.rfFormHeader-subForm {
+	float: center;
+	white-space: nowrap;
+	display: inline-block;
+}
+
+.rfFormDefaults, .rfFormContainer {
+	width: 100%;
+	margin-top: auto;
+	margin-bottom: auto;
+	font-size: 15px;
+}
+
+.rfFormContainer {
+	width: 100%;
+	display: block;
+	height: 100%;
+	overflow: auto;
+}
+
+.rfFormReset, .rfFormSubmit {
+	box-sizing: border-box;
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	background-color: #538fbe;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+}
+.rfFormReset:disabled, .rfFormSubmit:disabled {
+	background-color: #d3d7cf;
+}
+
+.rfFormReset {
+	
+}
+
+.rfFormSubmit {
+	
+}
+
+.rfFormSubmitRow {
+	text-align: center;
+	width: 100%;
+	margin: 0;
+	margin-top: 5px;
+	border: none;
+	vertical-align: middle;
+}
+
+.rf-container {
+	width: 100%;
+	display: inline-block;
+	white-space: nowrap;
+}
+
+.rfFormHidden {
+	display: none;
+}
+
+.rf-form-autcomplete {
+	
+}
+
+.rfFormDefaultsInputText, .rfFormDefaultsInputTextfailed {
+	box-sizing: border-box;
+	display: inline-block;
+	outline: 0 none;
+	border: solid 1px;
+	margin-left: 10px;
+	margin-bottom: 3px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	width: calc(50% - 10px);
+}
+
+.rfFormRadioHeader {
+	font-weight: 500;
+	margin-left: 10px;
+	display: block;
+	width: calc(100% - 10px);
+}
+
+.rfFormDefaultsInputRaidio  input[type='radio'] {
+	-webkit-appearance: none;
+	width: 20px;
+	height: 20px;
+	border: 1px solid darkgray;
+	border-radius: 50%;
+	outline: none;
+	box-shadow: 0 0 5px 0px gray inset;
+}
+
+.rfFormDefaultsInputRaidio  input[type='radio']:checked:after {
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: #ffa500;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid white;
+}
+
+.rfFormDefaultsInputTextfailed {
+	background-color: pink;
+}
+
+.rfFormDefaultsInputText:focus {
+	background-color: yellow;
+}
+
+.rfFormLabelIndent {
+	font-wieght: 500;
+	margin-left: 10px;
+	width: calc(35% - 10px);
+	display: inline-block;
+	white-space: nowrap;
+}
+
+.rf-form-radio-indent {
+	display: inline-block;
+	width: calc(50% - 20px);
+	margin-left: 20px;
+	white-space: normal;
+}
+
+.rf-form-radio-button-cell, .rf-form-radio-button-cell-failed {
+	display: inline-block;
+	width: calc(50% - 10px);
+	margin-left: 10px;
+}
+
+.rf-form-error {
+	background-color: pink;
+	color: black;
+	font-wieght: 500;
+	text-align: center;
+}
+
+.rf-form-radio-button-cell-failed {
+	background-color: pink;
+}
+
+.rf-form-raidio-row {
+	width: 100%;
+	display: block;
+	white-space: nowrap;
+	color: #7575a3;
+}
+
+.rf-form-raidio-row-container {
+	display: block;
+	width: 100%;
+}
+
+.rf-form-input-container {
+	width: 100%;
+}
+
+.rfFormLabel, .rf-form-label {
+	box-sizing: border-box;
+	display: inline-block;
+	width: calc(50% - 10px);
+	margin-left: 10px;
+	white-space: normal;
+}
+
+.rf-form-label {
+	display: block;
+}
+
+.ConsomeContainer {
+	height: 100%;
+	width: 100%;
+	-webkit-flex: 1; /* Safari 6.1+ */
+	-ms-flex: 1; /* IE 10 */
+	flex: 1;
+	align-items: stretch;
+	display: flex;
+}
