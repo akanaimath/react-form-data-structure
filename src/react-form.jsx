@@ -1,7 +1,7 @@
 'use strict';
 import React, { PropTypes } from 'react';
 import { render } from 'react-dom';
-import { cloneObject, mergeObjects, objectsDiffer, cloneProps } from 'react-object-utils';
+import { cloneObject, mergeObjects, cloneProps } from 'react-utility';
 import { FormElements } from './form-elements.js';
 import './form-input.js';
 import { List } from './form-container-list.js';

@@ -1,6 +1,6 @@
 'use strict';
 import React, { Component, PropTypes } from 'react';
-import { cloneObject, mergeObjects, objectsDiffer, cloneProps  } from 'react-object-utils';
+import { cloneProps  } from 'react-utility';
 import { FormElements } from './form-elements.js';
 
 class Hash extends React.Component {

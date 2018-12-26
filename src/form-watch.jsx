@@ -1,7 +1,7 @@
 'use strict';
 import React, { PropTypes } from 'react';
 import { FormElements } from './form-elements.js';
-import { cloneObject, mergeObjects, objectsDiffer, cloneProps } from 'react-object-utils';
+import { cloneObject, cloneProps } from 'react-utility';
 
 class Watch extends React.Component {
     constructor( props ) {

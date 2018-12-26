@@ -3,8 +3,8 @@ import 'flatpickr/dist/themes/material_blue.css';
 import 'react-quill/dist/quill.snow.css';
 import React, { PropTypes } from 'react';
 import { render } from 'react-dom';
-import { Form, FormElements } from '../build/form.js';
-import { cloneObject, mergeObjects, objectsDiffer, cloneProps } from 'react-object-utils';
+import { Form, FormElements } from '../build/react-form.js';
+import { cloneObject } from 'react-utility';
 
 
 class FormDemo extends React.Component {

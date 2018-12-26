@@ -1,56 +1,54 @@
 {
-    "name": "react-form",
-    "version": "0.0.1",
-    "description": "React Data Centric form generation library",
-    "main": "build/react-form.js",
-    "scripts": {
-      "test": "mocha --require babel-register ./test/test.jsx",
-      "build": "babel --source-maps inline src --out-dir build --minified --compact true --retain-lines",
-      "watch": "rm -f build/*.js build/*.map && babel --source-maps inline src --out-dir build --minified --compact true --retain-lines --watch",
-      "demo": "NODE_ENV=development webpack -d",
-      "prepublish": "npm run build && npm run test"
-    },
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/akanaimath/react-form.git"
-    },
-    "keywords": [
-      "form",
-      "builder",
-      "formbuilder",
-      "forms",
-      "generation"
-    ],
-    "files": [
-      "build/",
-      "react-form.css"
-    ],
-    "author": "Naimath",
-    "license": "MIT",
-    "dependencies": {
-      "flatpickr": "4.x",
-      "react": "16.x",
-      "react-form": "^1.x",
-      "react-object-utils": "0.x",
-      "react-color": "^2.13.8",
-      "react-dom": "16.x",
-      "react-quill": "^1.2.3"
-    },
-    "devDependencies": {
-      "babel-cli": "6.x",
-      "babel-core": "6.x",
-      "babel-loader": "7.x",
-      "babel-plugin-minify-dead-code-elimination": "0.x",
-      "babel-plugin-transform-class-properties": "6.x",
-      "babel-plugin-transform-react-jsx": "6.x",
-      "babel-preset-env": "1.x",
-      "babel-preset-react": "6.x",
-      "babel-register": "6.x",
-      "css-loader": "0.x",
-      "mocha": "4.x",
-      "react-addons-test-utils": "^15.6.2",
-      "style-loader": "0.x",
-      "unit.js": "2.x",
-      "webpack": "3.x"
-    }
+  "name": "react-form",
+  "description": "React Data Centric form generation library",
+  "main": "build/react-form.js",
+  "scripts": {
+    "test": "mocha --require babel-register ./test/test.jsx",
+    "build": "babel --source-maps inline src --out-dir build --minified --compact true --retain-lines",
+    "watch": "rm -f build/*.js build/*.map && babel --source-maps inline src --out-dir build --minified --compact true --retain-lines --watch",
+    "demo": "webpack -d",
+    "prepublish": "npm run build && npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akanaimath/react-form.git"
+  },
+  "keywords": [
+    "form",
+    "builder",
+    "formbuilder",
+    "forms",
+    "generation"
+  ],
+  "files": [
+    "build/",
+    "react-form.css"
+  ],
+  "author": "Naimath",
+  "license": "MIT",
+  "dependencies": {
+    "flatpickr": "4.x",
+    "react": "16.x",
+    "react-color": "^2.13.8",
+    "react-dom": "16.x",
+    "react-quill": "^1.2.3",
+    "react-utility": "^1.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "6.x",
+    "babel-core": "6.x",
+    "babel-loader": "7.x",
+    "babel-plugin-minify-dead-code-elimination": "0.x",
+    "babel-plugin-transform-class-properties": "6.x",
+    "babel-plugin-transform-react-jsx": "6.x",
+    "babel-preset-env": "1.x",
+    "babel-preset-react": "6.x",
+    "babel-register": "6.x",
+    "css-loader": "0.x",
+    "mocha": "4.x",
+    "react-addons-test-utils": "^15.6.2",
+    "style-loader": "0.x",
+    "unit.js": "2.x",
+    "webpack": "3.x"
   }
+}
