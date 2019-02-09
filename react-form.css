@@ -27,7 +27,7 @@
 }
 
 .rf-form-textarea-error {
-	background-color: pink;
+	background-color: #A9ABAF;
 }
 
 .rf-form-textarea-container {
@@ -136,7 +136,7 @@
 }
 
 .rf-form-label-right-error {
-	background-color: pink;
+	background-color: #A9ABAF;
 	display: inline-block;
 	width: calc(50% - 10px);
 	margin-left: 10px;
@@ -151,7 +151,7 @@
 }
 
 .rf-form-input-checkbox-error {
-	background-color: pink;
+	background-color: #A9ABAF;
 }
 
 .rfFormSelectHeader, .rfFormSelect, .rf-form-select-cell,
@@ -166,7 +166,7 @@
 }
 
 .rf-form-select-cell-error {
-	background-color: pink
+	background-color: #A9ABAF
 }
 
 .classNameSelectRow {
@@ -179,9 +179,9 @@
 	background-color: white;
 	width: 100%;
 	margin: 0;
-	-webkit-border-radius: 50px;
-	-moz-border-radius: 50px;
-	border-radius: 50px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
 	border: solid black 1px;
 }
 
@@ -204,7 +204,7 @@
 }
 
 .rfFormSelectError {
-	background-color: pink;
+	background-color: #A9ABAF;
 }
 
 .rf-form-select-multi {
@@ -226,7 +226,7 @@
 }
 
 .rf-form-select-option-error {
-	background-color: pink;
+	background-color: #A9ABAF;
 }
 
 .rf-form-submit-row {
@@ -298,10 +298,10 @@
 	text-decoration: none;
 	color: #fff;
 	font-weight: bold;
-	background-color: #538fbe;
-	-webkit-border-radius: 50px;
-	-moz-border-radius: 50px;
-	border-radius: 50px;
+	background-color: #337DFF;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
 }
 .rfFormReset:disabled, .rfFormSubmit:disabled {
 	background-color: #d3d7cf;
@@ -345,9 +345,9 @@
 	border: solid 1px;
 	margin-left: 10px;
 	margin-bottom: 3px;
-	-webkit-border-radius: 50px;
-	-moz-border-radius: 50px;
-	border-radius: 50px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
 	width: calc(50% - 10px);
 }
 
@@ -383,7 +383,7 @@
 }
 
 .rfFormDefaultsInputTextfailed {
-	background-color: pink;
+	background-color: #A9ABAF;
 }
 
 .rfFormDefaultsInputText:focus {
@@ -412,14 +412,14 @@
 }
 
 .rf-form-error {
-	background-color: pink;
+	background-color: #A9ABAF;
 	color: black;
 	font-wieght: 500;
 	text-align: center;
 }
 
 .rf-form-radio-button-cell-failed {
-	background-color: pink;
+	background-color: #A9ABAF;
 }
 
 .rf-form-raidio-row {
