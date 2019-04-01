@@ -1,7 +1,7 @@
 {
   "name": "react-form-data-structure",
   "description": "React Data Centric form generation library",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "build/react-form.js",
   "scripts": {
     "test": "mocha --require babel-register ./test/test.jsx",
