@@ -1,17 +1,17 @@
 # React form builder
-  `react-form` was created to manage complex data structures.  A single configuration is used to describe both the data structure and the form.  The configuration is designed have a minimal feel/code footprint, with the ability to tune or change almost anything.  The idea is to be able to create an manage an infinitly scaling form/data structure that is only limited by browser resources.
+  `react-form-data-structure` was created to manage complex data structures.  A single configuration is used to describe both the data structure and the form.  The configuration is designed have a minimal feel/code footprint, with the ability to tune or change almost anything.  The idea is to be able to create an manage an infinitly scaling form/data structure that is only limited by browser resources.
 
 ## Install
 
 ```
-yarn add react-form
+yarn add react-form-data-structure
 ```
 
 ## Basic use case
 
 ```
-import { Form } from 'react-form';
-import 'react-form/form.css';  // to load the css
+import { Form } from 'react-form-data-structure';
+import 'react-form-data-structure/react-form.css';  // to load the css
 
 render( <Form  label="I am a form!" 
   display={{ 
@@ -901,7 +901,7 @@ The `root` object offers the following event handler registration methods, and c
 Import the module registry.
 
 ```
-import { FormElements } from 'react-form/build/form-elements.jsx';
+import { FormElements } from 'react-form-data-structure/build/form-elements.jsx';
 ```
 
 Register your module
