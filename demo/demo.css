@@ -18,6 +18,10 @@ html, body {
 
 .demo-header {
 	text-align: center;
+    background: gray;
+    color: white;
+    text-transform: uppercase;
+    font-size: 26px;
 }
 
 .demo-container {

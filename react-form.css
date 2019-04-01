@@ -10,7 +10,7 @@
 	outline: 0 none;
 	border: none;
 	box-sizing: border-box;
-	color: #7575a3;
+	color: #000000;
 }
 
 .rf-form-container, .rf-form-textarea-container {
@@ -94,12 +94,12 @@
 }
 
 .rf-form-can-hide-element-row-label {
-	font-wieght: 500;
+	font-weight: 500;
 	margin-left: 5px;
 	width: calc(90% - 5px);
 	display: inline-block;
 	margin-bottom: 3px;
-	color: #7575a3;
+	color: #000000;
 }
 
 .rf-form-can-hide-element-input {
@@ -123,7 +123,7 @@
 
 .rf-form-input-container, .rf-form-label-right,
 	.rf-form-element-left {
-	box-sizing: border-box; //
+	/* box-sizing: border-box; */
 	width: 100%;
 	white-space: nowrap;
 	display: inline-block;
@@ -215,13 +215,13 @@
 
 .rf-form-container-list-header {
 	font-weight: 800;
-	color: #7575a3;
+	color: #000000;
 	width: calc(100% - 5px);
 	margin-left: 5px;
 }
 
 .rf-form-select-option, .rf-form-select-option-error {
-	color: #7575a3;
+	color: #000000;
 	background-color: white;
 }
 
@@ -246,13 +246,13 @@
 .rfFormSelectHeader {
 	font-weight: 500;
 	vertical-align: top;
-	color: #7575a3;
+	color: #000000;
 	width: calc(50% - 10px);
 }
 
 .rf-form-header {
 	text-align: center;
-	color: #7575a3;
+	color: #000000;
 	font-size: 40px;
 	font-weight: 800;
 }
@@ -260,7 +260,7 @@
 .rf-subform-header {
 	text-align: left;
 	margin-left: 5px;
-	color: #7575a3;
+	color: #000000;
 	font-size: 23px;
 	font-weight: 600;
 }
@@ -391,7 +391,7 @@
 }
 
 .rfFormLabelIndent {
-	font-wieght: 500;
+	font-weight: 500;
 	margin-left: 10px;
 	width: calc(35% - 10px);
 	display: inline-block;
@@ -414,7 +414,7 @@
 .rf-form-error {
 	background-color: #A9ABAF;
 	color: black;
-	font-wieght: 500;
+	font-weight: 500;
 	text-align: center;
 }
 
@@ -426,7 +426,7 @@
 	width: 100%;
 	display: block;
 	white-space: nowrap;
-	color: #7575a3;
+	color: #000000;
 }
 
 .rf-form-raidio-row-container {

@@ -92,7 +92,7 @@ class FormAutoComplete extends React.Component {
 const css = {
     classNameInputText: "rf-FormDefaultsInputText",
     classNameInputTextCheckFailed: "rf-FormDefaultsInputTextfailed",
-    classNameInputLabel: "rf-FormLabel",
+    classNameInputLabel: "rfFormLabel",
     classNameInputContainer: "rf-form-input-container",
     classNameInputTextDefault: "rf-FormDefaultsInputText",
     classNameInputAutoComplete: "rf-auto-complete",

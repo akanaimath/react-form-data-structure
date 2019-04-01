@@ -8,32 +8,32 @@ import { cloneObject } from 'react-utility';
 
 
 class FormDemo extends React.Component {
-    constructor( props ) {
-        super( props );
+    constructor(props) {
+        super(props);
         this.state = {};
-        this.state.form = cloneObject( FormDemo.demos['basictext'] );
+        this.state.form = cloneObject(FormDemo.demos['basictext']);
         this.state.currentDemo = 'basictext';
         this.state.data = this.state.form.data;
         this.state.display = this.state.form.display;
 
-        this.setDemo = this.setDemo.bind( this );
-        this.handleDataChange = this.handleDataChange.bind( this );
-        this.handleReset = this.handleReset.bind( this )
+        this.setDemo = this.setDemo.bind(this);
+        this.handleDataChange = this.handleDataChange.bind(this);
+        this.handleReset = this.handleReset.bind(this)
     }
 
     handleReset() {
-        this.setDemo( this.state.currentDemo );
+        this.setDemo(this.state.currentDemo);
     }
 
-    setDemo( demo ) {
-        const form = cloneObject( FormDemo.demos[demo] );
-        const data = cloneObject( form.data );
-        const display = cloneObject( form.display );
-        this.setState( { form: form, data: data, display: display, currentDemo: demo } );
+    setDemo(demo) {
+        const form = cloneObject(FormDemo.demos[demo]);
+        const data = cloneObject(form.data);
+        const display = cloneObject(form.display);
+        this.setState({ form: form, data: data, display: display, currentDemo: demo });
     }
 
-    handleDataChange( form ) {
-        this.setState( { form: form } );
+    handleDataChange(form) {
+        this.setState({ form: form });
     }
 
     render() {
@@ -42,50 +42,50 @@ class FormDemo extends React.Component {
             <div>
                 <div className="demo-header"> Form Demo</div>
                 <div>
-                    <input type="button" value="Scalar Example" onClick={this.setDemo.bind( this, "basictext" )} />
-                    <input type="button" value="Hash Example" onClick={this.setDemo.bind( this, "hash" )} />
-                    <input type="button" value="Basic Add" onClick={this.setDemo.bind( this, "basicadd" )} />
-                    <input type="button" value="Add to list with Multiple subforms" onClick={this.setDemo.bind( this, "add" )} />
-                    <input type="button" value="Complex List Example" onClick={this.setDemo.bind( this, "listwithdelete" )} />
-                    <input type="button" value="Watch Example" onClick={this.setDemo.bind( this, "watch" )} />
-                    <input type="button" value="AutoComplete Example" onClick={this.setDemo.bind( this, "autocomplete" )} />
-                    <input type="button" value="Date Picker" onClick={this.setDemo.bind( this, "datepicker" )} />
-                <input type="button" value="Quill Demo" onClick={this.setDemo.bind( this, "quill" )} />
-                <input type="button" value="Color Picker" onClick={this.setDemo.bind( this, "color" )} />
-                <input type="button" value="Disabled Buttons" onClick={this.setDemo.bind( this, "disabledButtons" )} />
+                    <input type="button" value="Scalar Example" onClick={this.setDemo.bind(this, "basictext")} />
+                    <input type="button" value="Hash Example" onClick={this.setDemo.bind(this, "hash")} />
+                    <input type="button" value="Basic Add" onClick={this.setDemo.bind(this, "basicadd")} />
+                    <input type="button" value="Add to list with Multiple subforms" onClick={this.setDemo.bind(this, "add")} />
+                    <input type="button" value="Complex List Example" onClick={this.setDemo.bind(this, "listwithdelete")} />
+                    <input type="button" value="Watch Example" onClick={this.setDemo.bind(this, "watch")} />
+                    <input type="button" value="AutoComplete Example" onClick={this.setDemo.bind(this, "autocomplete")} />
+                    <input type="button" value="Date Picker" onClick={this.setDemo.bind(this, "datepicker")} />
+                    <input type="button" value="Quill Demo" onClick={this.setDemo.bind(this, "quill")} />
+                    <input type="button" value="Color Picker" onClick={this.setDemo.bind(this, "color")} />
+                    <input type="button" value="Disabled Buttons" onClick={this.setDemo.bind(this, "disabledButtons")} />
 
                 </div>
                 <div className="demo-container">
                     <div className="demo-cell-30">
                         <div className="demo-topic">Display Settings</div>
-                        <div><div className="demo-json"><pre>{JSON.stringify( this.state.display, null, 2 )}</pre></div></div>
+                        <div><div className="demo-json"><pre>{JSON.stringify(this.state.display, null, 2)}</pre></div></div>
                     </div>
                     <div className="demo-cell-30">
                         <div className="demo-topic">Current Data</div>
-                        <div className="demo-json"><pre>{JSON.stringify( this.state.form.data, null, 2 )}</pre></div>
+                        <div className="demo-json"><pre>{JSON.stringify(this.state.form.data, null, 2)}</pre></div>
                     </div>
 
                     <div className="demo-cell-40">
                         <div className="demo-topic">Rendered Form</div>
                         <div><Form {...this.state.form} onReset={this.handleReset} onChange={this.handleDataChange} /></div></div>
                 </div>
-            </div> );
+            </div>);
     }
 }
 
 FormDemo.demos = {
-        color: {
-            label: "Color Picker Demo",
-            display: {label: "Pick a color", type: 'color', required: true}
-        },
-        quill: {
-            label: "Quill demo",
-            display: { label: 'Quill Demo', type: 'quill',required: true }
-        },
+    color: {
+        label: "Color Picker Demo",
+        display: { label: "Pick a color", type: 'color', required: true }
+    },
+    quill: {
+        label: "Quill demo",
+        display: { label: 'Quill Demo', type: 'quill', required: true }
+    },
     datepicker: {
         label: "Date Picker Demo",
         data: "",
-        display: { label: 'date picker', type: 'datepicker',required: true }
+        display: { label: 'date picker', type: 'datepicker', required: true }
     },
     autocomplete: {
         label: "Text auto complete",
@@ -125,7 +125,7 @@ FormDemo.demos = {
                 display: {
                     type: 'hash', display: [
                         { name: 'label', type: 'text', label: "label" },
-                        { name: 'value', type: 'text', label: "value"  },
+                        { name: 'value', type: 'text', label: "value" },
                         {
                             name: 'forms', type: 'select', label: "Choose the subform", data: [{ value: 'Informal', label: 'informal' }, { value: 'Formal', label: 'formal' }]
                         }
@@ -252,16 +252,16 @@ FormDemo.demos = {
         }
     }
 };
-FormDemo.demos.disabledButtons.data="";
+FormDemo.demos.disabledButtons.data = "";
 FormDemo.demos.color.data = "";
 FormDemo.demos.quill.data = "";
 FormDemo.demos.datepicker.data = "";
 FormDemo.demos.autocomplete.data = "";
-FormDemo.demos.add.data = FormElements['add'].buildData( FormDemo.demos.add );
-FormDemo.demos.hash.data = FormElements['hash'].buildData( FormDemo.demos.hash.display );
-FormDemo.demos.listwithdelete.data = FormElements['list'].buildData( FormDemo.demos.listwithdelete.display );
-FormDemo.demos.basicadd.data = FormElements['add'].buildData( FormDemo.demos.basicadd.display );
-FormDemo.demos.watch.data = FormElements['hash'].buildData( FormDemo.demos.watch.display );
-render( <FormDemo />, document.getElementById( 'app' ) );
+FormDemo.demos.add.data = FormElements['add'].buildData(FormDemo.demos.add);
+FormDemo.demos.hash.data = FormElements['hash'].buildData(FormDemo.demos.hash.display);
+FormDemo.demos.listwithdelete.data = FormElements['list'].buildData(FormDemo.demos.listwithdelete.display);
+FormDemo.demos.basicadd.data = FormElements['add'].buildData(FormDemo.demos.basicadd.display);
+FormDemo.demos.watch.data = FormElements['hash'].buildData(FormDemo.demos.watch.display);
+render(<FormDemo />, document.getElementById('app'));
 
 // End of the demo file

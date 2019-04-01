@@ -1,6 +1,7 @@
 {
   "name": "react-form",
   "description": "React Data Centric form generation library",
+  "version":"0.1.0",
   "main": "build/react-form.js",
   "scripts": {
     "test": "mocha --require babel-register ./test/test.jsx",
@@ -29,7 +30,7 @@
   "dependencies": {
     "flatpickr": "4.x",
     "react": "16.x",
-    "react-color": "^2.13.8",
+    "react-color": "^2.17.0",
     "react-dom": "16.x",
     "react-quill": "^1.2.3",
     "react-utility": "^1.0.10"

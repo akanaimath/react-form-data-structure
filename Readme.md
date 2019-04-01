@@ -1,4 +1,5 @@
-# React data form builder
+# React form builder
+  `react-form` was created to manage complex data structures.  A single configuration is used to describe both the data structure and the form.  The configuration is designed have a minimal feel/code footprint, with the ability to tune or change almost anything.  The idea is to be able to create an manage an infinitly scaling form/data structure that is only limited by browser resources.
 
 ## Install
 
@@ -23,9 +24,6 @@ render( <Form  label="I am a form!"
 ```
 
 # Mindset
-
-`react-form` was created to manage complex data structures.  A single configuration is used to describe both the data structure and the form.  The configuration is designed have a minimal feel/code footprint, with the ability to tune or change almost anything.  The idea is to be able to create an manage an infinitly scaling form/data structure that is only limited by browser resoruces.
-
 Objects are typically displayed in containers; Containers represent data structures.  Example: if you want the form to manage a list ( Array Object ) the first container would be a `type: list`,  and the display contents would then represent list elements. 
 
 
@@ -922,10 +920,3 @@ npm run demo
 ```
 
 From there the demo/index.html can be viewed locally.
-
-# Todo
-
-1. More extensive unit tests
-2. Some error checking for add and watch
-3. More documentation
-4. UI changes

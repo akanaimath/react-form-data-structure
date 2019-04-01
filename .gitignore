@@ -1,12 +1,6 @@
-*.swp
 *.log
 *.gz
-*.rpm
-RPM_NAME
 *.log
-*.pid
-*.LCK
-.project
 yarn.lock
 yarn-error.log
 public/site.js
@@ -14,5 +8,5 @@ public/site.js
 .settings/*
 node_modules/*
 demo/site.js
-build/*
+build/*.js
 package-lock.json
